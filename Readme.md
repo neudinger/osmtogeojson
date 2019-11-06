@@ -38,7 +38,7 @@ In case a native installation is required, `curl -fsS https://dlang.org/install.
 
 #### Docker
 
-1. Docker must be instaled in your computer
+1. Docker must be installed on your computer
 
 [Docker dub/dmd](https://hub.docker.com/u/neudinger/dub/dmd)
 
@@ -180,7 +180,7 @@ little bit slow if file > 2GB
 
 ## Code Style and Optimisation
 
-I use all feature how need garbage collector.
+I use all features how need garbage collector.
 
 So speed and memory allocation are not optimized.
 

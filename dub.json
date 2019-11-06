@@ -31,6 +31,6 @@
 	"targetType": "executable",
 	"copyright": "Copyright © 2019, barrek",
 	"description": "osm to geojson",
-	"license": "proprietary",
+	"license": "eupl-1.2",
 	"name": "osmtogeojson"
 }
