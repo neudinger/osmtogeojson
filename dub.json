@@ -1,0 +1,36 @@
+{
+	"authors": [
+		"barrek"
+	],
+	"dependencies": {},
+	"com-buildOptions": [
+		"releaseMode"
+	],
+	"buildTypes": {
+		"release": {
+			"buildOptions": [
+				"releaseMode",
+				"optimize",
+				"inline"
+			],
+			"postBuildCommands": [
+				"./osmtogeojson.sh"
+			]
+		},
+		"debug": {
+			"targetType": "executable",
+			"buildOptions": [
+				"debugMode",
+				"debugInfo"
+			],
+			"postBuildCommands": [
+				"./osmtogeojson.sh"
+			]
+		}
+	},
+	"targetType": "executable",
+	"copyright": "Copyright © 2019, barrek",
+	"description": "osm to geojson",
+	"license": "proprietary",
+	"name": "osmtogeojson"
+}

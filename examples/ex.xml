@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xml_split:root xmlns:xml_split="http://xmltwig.com/xml_split">
+    <bounds minlat="48.11918" minlon="1.445097" maxlat="49.24271" maxlon="3.560409"/>
+    <node id="199040487" lat="48.7444381" lon="2.2220969" version="7" timestamp="2018-11-10T19:04:27Z" changeset="0">
+        <tag k="addr:city" v="Igny"/>
+        <tag k="addr:street" v="Route Nationale 444"/>
+        <tag k="amenity" v="fuel"/>
+        <tag k="compressed_air" v="yes"/>
+        <tag k="fuel:diesel" v="yes"/>
+        <tag k="fuel:e10" v="yes"/>
+        <tag k="is_in" v="Igny"/>
+        <tag k="name" v="BP"/>
+        <tag k="opening_hours" v="24/7"/>
+        <tag k="operator" v="BP"/>
+        <tag k="ref:FR:prix-carburants" v="91430003"/>
+        <tag k="shop" v="convenience;gas"/>
+        <tag k="source" v="Ministère de l&#39;Economie, de l&#39;Industrie et du Numérique - 08/04/2018"/>
+        <tag k="toilets" v="yes"/>
+    </node>
+</xml_split:root>

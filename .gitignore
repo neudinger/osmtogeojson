@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/osmtogeojson
+osmtogeojson.so
+osmtogeojson.dylib
+osmtogeojson.dll
+osmtogeojson.a
+osmtogeojson.lib
+osmtogeojson-test-*
+*.exe
+*.o
+*.obj
+*.lst
