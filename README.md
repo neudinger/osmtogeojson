@@ -103,11 +103,6 @@ docker run --rm -ti -v $(pwd):/home/src dubdmd
 
 ## Example
 
-```json
-```
-
-***TO***
-
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <xml_split:root xmlns:xml_split="http://xmltwig.com/xml_split">
