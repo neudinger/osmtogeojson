@@ -2,9 +2,11 @@
 
 Convert osm xml to osm GeoJson
 
+[![GitHub license](https://img.shields.io/badge/license-EUPL-blue.svg)](https://raw.githubusercontent.com/herotc/hero-rotation/master/LICENSE)
+
 ## Getting Started
 
-* Download data </br>
+* Download data
 or
 * Use example
 
@@ -40,31 +42,31 @@ In case a native installation is required, `curl -fsS https://dlang.org/install.
 
 1. Docker must be installed on your computer
 
-[Docker dub/dmd](https://hub.docker.com/u/neudinger/dub/dmd)
+[Docker dub/dmd](https://hub.docker.com/r/neudinger/dubdmd)
 
 Then execute:
 **linux**
 
 ```sh
-docker build . -t dub/dmd:latest
+docker build . -t dubdmd:latest
 ```
 
 **OR**
 
 ```sh
-docker pull dub/dmd
+docker pull neudinger/dubdmd:latest
 ```
 
 **OR**
 
 ```sh
-docker build . -t dub/dmd:latest
+docker build . -t dubdmd:latest
 ```
 
 **OR**
 
 ```sh
-docker build --rm . --build-arg buildtypes=debug -t dub/dmd:latest
+docker build --rm . --build-arg buildtypes=debug -t dubdmd:latest
 ```
 
 ~~windows and mac~~</br>
@@ -96,7 +98,7 @@ use linux or find by your self how tu use docker</br>
 ### Docker
 
 ```sh
-docker run --rm -ti -v $(pwd):/home/src dub/dmd
+docker run --rm -ti -v $(pwd):/home/src dubdmd
 ```
 
 ## Example
@@ -196,6 +198,3 @@ This project is licensed under the European Union Public License 1.2 see the :eu
 * [ ] Str2Double "48.7444381" :arrow_right: 48.7444381
 * [ ] Str2Bool "yes" :arrow_right: True
 * [ ] Str2Int "91430003" :arrow_right: 91430003
-
-<!-- https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md -->
-<!-- ![UE](https://europa.eu/european-union/sites/europaeu/files/docs/body/flag_yellow_low.jpg "https://europa.eu/european-union/about-eu/symbols/flag_en") -->
