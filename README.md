@@ -60,12 +60,6 @@ docker pull neudinger/dubdmd:latest
 **OR**
 
 ```sh
-docker build . -t dubdmd:latest
-```
-
-**OR**
-
-```sh
 docker build --rm . --build-arg buildtypes=debug -t dubdmd:latest
 ```
 
@@ -177,7 +171,7 @@ little bit slow if file > 2GB
 
 ## Code Style and Optimisation
 
-I use all features how need garbage collector.
+I use all garbage collector features.
 
 So speed and memory allocation are not optimized.
 

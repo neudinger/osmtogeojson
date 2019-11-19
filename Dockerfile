@@ -1,7 +1,7 @@
-FROM debian:latest
+FROM bitnami/minideb:latest
 LABEL MAINTAINER="Barre Kevin"
-LABEL version="1.0"
-LABEL IMAGE=https://hub.docker.com/u/neudinger/dub/dmd
+LABEL VERSION="1.1"
+LABEL IMAGE=https://hub.docker.com/r/neudinger/dubdmd
 LABEL SRC=https://github.com/neudinger/osmtogeojson \
       DESCRIPTION="Image with dmd and dub. \
                 With one dlang project compatible.\
@@ -11,10 +11,10 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /bin:/sbin:/usr/bin:$PATH
 
 RUN apt update && apt upgrade -y
-RUN apt-get install wget -y
+RUN apt --no-install-recommends install wget -y
 RUN wget https://netcologne.dl.sourceforge.net/project/d-apt/files/d-apt.list -O /etc/apt/sources.list.d/d-apt.list
-RUN apt-get update --allow-insecure-repositories && apt-get -y --allow-unauthenticated install --reinstall d-apt-keyring && apt-get update
-RUN apt-get install dub -y
+RUN apt update --allow-insecure-repositories && apt-get -y --allow-unauthenticated install --reinstall d-apt-keyring && apt-get update
+RUN apt install dub -y
 
 ENV SRC=/home/src
 
